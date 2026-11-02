@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Finite-State Framework for Tracking the Evolution of News Claims | Theory of Computation</title>
+  
+  <!-- Google Fonts for Academic & Intelligence Aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Main Application Container -->
+  <div class="app-layout">
+    
+    <!-- Top Header & Landing Showcase -->
+    <header class="platform-header">
+      <!-- Landing Hero & Quote Area -->
+      <section class="landing-hero">
+        <h1 class="project-title">A Finite-State Framework for Tracking the Evolution of News Claims</h1>
+        <p class="project-quote">
+          &ldquo;As stories evolve and perspectives grow, evidence reveals what we need to know.&rdquo;
+        </p>
+      </section>
+
+      <!-- Main Navigation Menu (Clean, Professional Labels Without Numbers) -->
+      <nav class="module-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <button class="nav-btn active" data-target="workspace-source-code" id="nav-btn-source-code">
+              <span class="btn-title">SOURCE CODE</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-btn" data-target="workspace-module-1" id="nav-btn-module-1">
+              <span class="btn-title">Claim Structure &amp; Baseline Formation</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-btn" data-target="workspace-module-2" id="nav-btn-module-2">
+              <span class="btn-title">Claim Evolution &amp; Finite-State Tracking</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-btn" data-target="workspace-module-3" id="nav-btn-module-3">
+              <span class="btn-title">Source Reliability &amp; Evidence Mapping</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-btn" data-target="workspace-module-4" id="nav-btn-module-4">
+              <span class="btn-title">Evolution Analysis &amp; TruthTrace Reporting</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-btn" data-target="workspace-toc" id="nav-btn-toc">
+              <span class="btn-title">Theory of Computation Principles</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Workspace Container (Single-Page View Switcher) -->
+    <main class="workspaces-viewport">
+
+      <!-- ========================================================================= -->
+      <!-- SOURCE CODE WORKSPACE                                                     -->
+      <!-- ========================================================================= -->
+      <section id="workspace-source-code" class="workspace-pane active">
+        <div class="workspace-header">
+          <div class="pane-title-group">
+            <span class="pane-eyebrow">FORMAL TOC PYTHON IMPLEMENTATION</span>
+            <h2 class="pane-title">Verified Python Automaton Implementation</h2>
+          </div>
+          <div class="pane-actions">
+            <button id="btnRunAppHeader" class="btn btn-run-app">
+              <span class="run-icon">▶</span> RUN THIS APPLICATION
+            </button>
+            <button id="btnCopySourceCode" class="btn btn-secondary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Python Code
+            </button>
+            <span id="copyFeedback" class="copy-feedback-badge">Copied to Clipboard!</span>
+          </div>
+        </div>
+
+        <div class="arch-overview-card card">
+          <h3 class="card-subtitle"><span class="gold-icon">&#10022;</span> Architectural Integration Model (Pure Python DFA)</h3>
+          <p class="arch-description">
+            This module displays the complete, standalone Python implementation of the formal Deterministic Finite Automaton <span class="math-mono">M = (Q, &Sigma;, &delta;, q<sub>0</sub>, F)</span>. It enforces strict transition logic, parses real-world news claims, calculates credibility-weighted stance scores, and generates verifiable TruthTrace audit proofs without third-party dependencies.
+          </p>
+          <div class="arch-grid">
+            <div class="arch-step">
+              <div class="arch-num">01</div>
+              <h4>Formal 5-Tuple Engine</h4>
+              <p>Models news verification via discrete states Q = {Q0..Q5} and alphabet &Sigma; = {a..e}.</p>
+            </div>
+            <div class="arch-arrow">&#10230;</div>
+            <div class="arch-step">
+              <div class="arch-num">02</div>
+              <h4>Transition Matrix &delta;(Q, &sigma;)</h4>
+              <p>Strict deterministic lookup table mapping every state and journalistic event to its next state.</p>
+            </div>
+            <div class="arch-arrow">&#10230;</div>
+            <div class="arch-step">
+              <div class="arch-num">03</div>
+              <h4>String Acceptance L(M)</h4>
+              <p>Evaluates input tapes (e.g., 'b d' or 'c e') verifying whether &delta;*(q0, w) &isin; F = {Q4}.</p>
+            </div>
+            <div class="arch-arrow">&#10230;</div>
+            <div class="arch-step">
+              <div class="arch-num">04</div>
+              <h4>TruthTrace Generator</h4>
+              <p>Produces mathematically verified audit certificates and formal transition proofs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prominent Run Action Banner Directly Above Python Code -->
+        <div class="run-app-banner card">
+          <div class="run-banner-content">
+            <div class="run-banner-badge">INTERACTIVE EXECUTION ENGINE</div>
+            <h3 class="run-banner-title">Launch Interactive News Claim Verification</h3>
+            <p class="run-banner-desc">
+              Execute this formal Python Deterministic Finite Automaton against real-world news claims, compute evidence weights, and trace formal state transitions in Module 1.
+            </p>
+          </div>
+          <button id="btnRunApplication" class="btn btn-run-app btn-run-app-lg">
+            <span class="run-icon">▶</span> RUN THIS APPLICATION
+          </button>
+        </div>
+
+        <div class="code-viewer-container card">
+          <div class="code-viewer-meta">
+            <span id="codeFileName" class="code-file-name">🐍 app.py &bull; Complete Python 3 Deterministic Finite Automaton</span>
+            <span id="codeFileStats" class="code-file-stats">Pure Python 3 &bull; M = (Q, &Sigma;, &delta;, q&#8320;, F)</span>
+          </div>
+          <pre class="code-pre"><code id="codeViewerContent" class="code-content">Loading Python source code...</code></pre>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- CLAIM STRUCTURE & BASELINE FORMATION                                      -->
+      <!-- ========================================================================= -->
+      <section id="workspace-module-1" class="workspace-pane">
+        <div class="workspace-header">
+          <div class="pane-title-group">
+            <span class="pane-eyebrow">INITIAL STATE (Q0)</span>
+            <h2 class="pane-title">Claim Structure &amp; Baseline Formation</h2>
+          </div>
+          <div class="pane-actions">
+            <button id="btnProceedToM2" class="btn btn-primary">
+              Initialize Automaton &amp; Go to Module 2 &rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-2col">
+          <!-- Left: Input & Extraction Controls -->
+          <div class="panel-left card">
+            <h3 class="card-title">
+              <span class="gold-icon">&#9670;</span> Enter Claim to Check
+            </h3>
+            <p class="card-intro">
+              Type any news statement below or click a trending topic card to track its verification journey through finite states.
+            </p>
+
+            <form id="claimInputForm" class="standard-form" onsubmit="return false;">
+              <div class="form-group">
+                <label for="inputClaimText" class="form-label">News Claim Statement (Editable):</label>
+                <textarea id="inputClaimText" class="form-textarea" rows="3" placeholder="Type any custom news claim here..."></textarea>
+                
+                <!-- Quick Fill Viral Topic Chips with Clear Sources -->
+                <div class="quick-fill-chips-container">
+                  <span class="quick-fill-label">⚡ Trending Real-World News Claims (Click to Check):</span>
+                  <div class="quick-fill-chips">
+                    <button type="button" class="chip-btn" data-topic="cricket">🏏 Virat Kohli Injury Rumor (Cricbuzz)</button>
+                    <button type="button" class="chip-btn" data-topic="aliens">🛸 Alien Biosignatures on K2-18b (NASA / JWST)</button>
+                    <button type="button" class="chip-btn" data-topic="weather">🌪️ Cyclone Fengal Landfall Warning (IMD)</button>
+                    <button type="button" class="chip-btn" data-topic="holiday">🏖️ 4-Day Holiday Circular (PIB Fact Check)</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-half">
+                  <label for="inputClaimSource" class="form-label">News Source:</label>
+                  <input type="text" id="inputClaimSource" class="form-input" placeholder="e.g., Cricbuzz, NASA, IMD, PIB Fact Check">
+                </div>
+                <div class="form-group col-half">
+                  <label for="inputClaimCategory" class="form-label">Category:</label>
+                  <select id="inputClaimCategory" class="form-select">
+                    <option value="Sports">Sports</option>
+                    <option value="Science & Space">Science &amp; Space</option>
+                    <option value="Weather">Weather</option>
+                    <option value="Public Notice">Public Notice</option>
+                    <option value="Education">Education</option>
+                    <option value="Finance">Finance</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-half">
+                  <label for="inputClaimDate" class="form-label">Date &amp; Time:</label>
+                  <input type="datetime-local" id="inputClaimDate" class="form-input">
+                </div>
+                <div class="form-group col-half">
+                  <label for="inputClaimConfidence" class="form-label">Initial Status:</label>
+                  <input type="text" id="inputClaimConfidence" class="form-input" value="Unverified (State Q0)" readonly>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" id="btnAnalyzeClaim" class="btn btn-secondary">
+                  <span class="icon">&#9881;</span> Identify Key Terms &amp; Set State Q0
+                </button>
+                <button type="button" id="btnQuickClear" class="btn btn-ghost btn-sm">Clear Form</button>
+              </div>
+            </form>
+
+            <!-- Extracted Linguistic & Computational Tokens -->
+            <div class="extracted-tokens-box">
+              <h4 class="sub-heading">Identified Key Terms:</h4>
+              <div id="keywordsPillContainer" class="keywords-pill-cloud">
+                <!-- Dynamically generated keyword tags -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Formal State Q0 Circular Representation -->
+          <div class="panel-right card">
+            <h3 class="card-title">
+              <span class="gold-icon">&#9678;</span> Initial State: Q0 (Unverified Claim)
+            </h3>
+            <p class="card-intro">
+              In our finite-state model, every news claim begins at state Q0 before evidence is evaluated.
+            </p>
+
+            <div class="svg-state-q0-wrapper">
+              <svg id="svgStateQ0" viewBox="0 0 380 260" class="responsive-svg">
+                <defs>
+                  <marker id="arrowStart" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1 L 9 5 L 0 9 z" fill="#D9B66F" />
+                  </marker>
+                  <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="6" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+
+                <!-- Initial Start Arrow -->
+                <path d="M 40,130 L 120,130" stroke="#D9B66F" stroke-width="2.5" marker-end="url(#arrowStart)" stroke-dasharray="4 2"/>
+                <text x="50" y="118" fill="#D9B66F" font-family="'Fira Code', monospace" font-size="12" font-weight="600">Start (q&#8320;)</text>
+
+                <!-- Circular State Node Q0 -->
+                <circle cx="210" cy="130" r="70" fill="#092D25" stroke="#D9B66F" stroke-width="3" filter="url(#glowGold)"/>
+                <circle cx="210" cy="130" r="63" fill="none" stroke="#104638" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+                <text x="210" y="115" text-anchor="middle" fill="#D9B66F" font-family="'Cinzel', serif" font-size="20" font-weight="700">Q0</text>
+                <text x="210" y="136" text-anchor="middle" fill="#F4F0E6" font-family="'Inter', sans-serif" font-size="12" font-weight="600" letter-spacing="1">INITIAL CLAIM</text>
+                <text x="210" y="156" text-anchor="middle" fill="#A8B9A9" font-family="'Fira Code', monospace" font-size="10">State Q0</text>
+              </svg>
+            </div>
+
+            <div class="baseline-summary-table card-sub">
+              <h4 class="sub-heading">Initial Claim Summary:</h4>
+              <table class="table-compact">
+                <tbody>
+                  <tr>
+                    <th>Starting State:</th>
+                    <td><span class="badge badge-gold">Q0 (Initial State)</span></td>
+                  </tr>
+                  <tr>
+                    <th>Claim Statement:</th>
+                    <td id="tableClaimStatement" class="text-ivory">Virat Kohli is ruled out of the upcoming Border-Gavaskar Trophy series due to a chronic back spasm.</td>
+                  </tr>
+                  <tr>
+                    <th>News Source:</th>
+                    <td id="tableClaimSource">Cricbuzz / Sports Desk</td>
+                  </tr>
+                  <tr>
+                    <th>Category:</th>
+                    <td id="tableClaimCategory">Sports</td>
+                  </tr>
+                  <tr>
+                    <th>Claim Status:</th>
+                    <td><span class="badge badge-sage">Unverified (State Q0)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- CLAIM EVOLUTION & FINITE-STATE TRACKING                                   -->
+      <!-- ========================================================================= -->
+      <section id="workspace-module-2" class="workspace-pane">
+        <div class="workspace-header">
+          <div class="pane-title-group">
+            <span class="pane-eyebrow">CORE FINITE-STATE TRACKING ENGINE (DFA)</span>
+            <h2 class="pane-title">Claim Evolution &amp; Finite-State Tracking</h2>
+          </div>
+          <div class="pane-actions">
+            <button id="btnProceedToM3" class="btn btn-secondary btn-sm">
+              Proceed to Evidence Mapping &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Claim Dynamic Tracking Banner -->
+        <div class="active-claim-banner">
+          <span class="banner-label">TRACKING ACTIVE CLAIM:</span>
+          <span id="m2ActiveClaimText" class="banner-text">Loading active claim...</span>
+          <span class="badge badge-gold" id="m2ActiveCategoryBadge">Sports &amp; Athletics</span>
+        </div>
+
+        <!-- DFA Interactive Visualizer Canvas -->
+        <div class="dfa-canvas-card card">
+          <div class="dfa-canvas-header">
+            <div class="dfa-title-wrap">
+              <h3 class="card-title">
+                <span class="gold-icon">&#10022;</span> Interactive Deterministic Finite Automaton (DFA) State Machine
+              </h3>
+              <span class="dfa-subtext">Click states or use the control console below to evaluate transition function <span class="math-mono">&delta;(q, &sigma;)</span></span>
+            </div>
+            <div class="dfa-legend">
+              <span class="legend-item"><span class="legend-circle q-start"></span> Initial (Q0)</span>
+              <span class="legend-item"><span class="legend-circle q-inter"></span> Intermediate (Q1, Q2, Q3)</span>
+              <span class="legend-item"><span class="legend-circle q-accept"></span> Verified Accepting (Q4)</span>
+              <span class="legend-item"><span class="legend-circle q-reject"></span> Rejected Terminal (Q5)</span>
+            </div>
+          </div>
+
+          <div class="svg-automaton-container">
+            <svg id="svgDFAAutomaton" viewBox="0 0 960 480" class="dfa-svg">
+              <defs>
+                <marker id="dfaArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 9 5 L 0 9 z" fill="#D9B66F" />
+                </marker>
+                <marker id="dfaArrowActive" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 1 L 9 5 L 0 9 z" fill="#1CA17C" />
+                </marker>
+                <filter id="nodeGlow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="8" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+                <filter id="activeGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="blur" />
+                  <feFlood flood-color="#D9B66F" result="glowColor" />
+                  <feComposite in="glowColor" in2="blur" operator="in" result="coloredBlur" />
+                  <feMerge>
+                    <feMergeNode in="coloredBlur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Paths Layer -->
+              <g id="dfaTransitionsLayer"></g>
+
+              <!-- Nodes Layer -->
+              <g id="dfaNodesLayer"></g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Execution & Transition Controls Grid -->
+        <div class="grid-2col mt-4">
+          <!-- Left: State Transition Controller -->
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">&#9658;</span> Trigger State Transitions
+            </h3>
+            <p class="card-intro">
+              Click an action below to test how different journalistic events move the claim from current state <span id="currentActiveStateLabel" class="gold-pill">Q0</span>.
+            </p>
+
+            <div class="transition-buttons-grid">
+              <button class="trans-btn btn-a" data-symbol="a">
+                <span class="trans-sym">Action a</span>
+                <span class="trans-name">Claim Modified / Revised</span>
+                <span class="trans-effect">State moves &rarr; Q1</span>
+              </button>
+              <button class="trans-btn btn-b" data-symbol="b">
+                <span class="trans-sym">Action b</span>
+                <span class="trans-name">Supporting Evidence Added</span>
+                <span class="trans-effect">State moves &rarr; Q2</span>
+              </button>
+              <button class="trans-btn btn-c" data-symbol="c">
+                <span class="trans-sym">Action c</span>
+                <span class="trans-name">Contradictory Evidence Added</span>
+                <span class="trans-effect">State moves &rarr; Q3</span>
+              </button>
+              <button class="trans-btn btn-d" data-symbol="d">
+                <span class="trans-sym">Action d</span>
+                <span class="trans-name">Verification Confirmed</span>
+                <span class="trans-effect">Claim Status: Verified (Q4)</span>
+              </button>
+              <button class="trans-btn btn-e" data-symbol="e">
+                <span class="trans-sym">Action e</span>
+                <span class="trans-name">Claim Debunked as False</span>
+                <span class="trans-effect">Claim Status: Fake / Debunked (Q5)</span>
+              </button>
+              <button id="btnResetDFA" class="trans-btn btn-reset">
+                <span class="trans-sym">&#8634; Reset</span>
+                <span class="trans-name">Reset to Start State (Q0)</span>
+                <span class="trans-effect">Return to Initial Claim</span>
+              </button>
+            </div>
+
+            <!-- Preloaded Test Sequences -->
+            <div class="preset-sequences-box mt-3">
+              <h4 class="sub-heading">Quick Test Sequences:</h4>
+              <div class="seq-btn-group">
+                <button class="btn btn-ghost btn-sm" data-seq="b d">Verify Claim (b &rarr; d)</button>
+                <button class="btn btn-ghost btn-sm" data-seq="c e">Debunk Claim (c &rarr; e)</button>
+                <button class="btn btn-ghost btn-sm" data-seq="a b d">Modify then Verify (a &rarr; b &rarr; d)</button>
+                <button class="btn btn-ghost btn-sm" data-seq="c a b d">Clarify Dispute then Verify (c &rarr; a &rarr; b &rarr; d)</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Formal Transition Function Table (Delta Matrix) -->
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">&#9638;</span> State Transition Table &delta;(State, Input)
+            </h3>
+            <p class="card-intro">
+              Lookup table mapping every state <span class="math-mono">q &isin; Q</span> and action <span class="math-mono">&sigma; &isin; &Sigma;</span> to the next deterministic state.
+            </p>
+
+            <div class="table-responsive">
+              <table id="dfaMatrixTable" class="dfa-table">
+                <thead>
+                  <tr>
+                    <th>Current State Q</th>
+                    <th>a (Modify)</th>
+                    <th>b (Support)</th>
+                    <th>c (Dispute)</th>
+                    <th>d (Verify)</th>
+                    <th>e (Reject)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Populated by JavaScript and dynamically highlighted -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Transition Audit Log -->
+            <div class="transition-audit-card mt-3">
+              <div class="audit-header">
+                <h4 class="sub-heading">State Transition Log:</h4>
+                <button id="btnClearLog" class="btn btn-ghost btn-xs">Clear Log</button>
+              </div>
+              <div id="transitionLogContainer" class="audit-log-scroll">
+                <!-- Log entries injected here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- SOURCE RELIABILITY & EVIDENCE MAPPING                                     -->
+      <!-- ========================================================================= -->
+      <section id="workspace-module-3" class="workspace-pane">
+        <div class="workspace-header">
+          <div class="pane-title-group">
+            <span class="pane-eyebrow">EVIDENCE FORMALIZATION &amp; RELIABILITY SCORING</span>
+            <h2 class="pane-title">Source Reliability &amp; Evidence Mapping</h2>
+          </div>
+          <div class="pane-actions">
+            <button id="btnProceedToM4" class="btn btn-secondary btn-sm">
+              Generate TruthTrace Report &rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="disclaimer-banner">
+          <span class="disclaimer-icon">&#9888;</span>
+          <span class="disclaimer-text">
+            <strong>EVIDENCE EVALUATION:</strong> Add supporting or contradictory news reports to test how evidence shifts the claim's state in the finite-state machine.
+          </span>
+        </div>
+
+        <div class="grid-2col mt-3">
+          <!-- Left: Pre-Configured Evidence Options & Scoring Model -->
+          <div class="card">
+            <div class="evidence-vault-header">
+              <h3 class="card-title">
+                <span class="gold-icon">&#10022;</span> Pre-Configured Evidence Options
+              </h3>
+              <span id="activeEvidenceThemeBadge" class="badge badge-gold">🏏 Cricket Evidence Vault</span>
+            </div>
+            <p class="card-intro">
+              Select verified real-world evidence cards below to attach them to the active claim without any manual typing.
+            </p>
+
+            <!-- Quick Action Controls -->
+            <div class="evidence-vault-controls">
+              <button type="button" id="btnAttachAllEvidence" class="btn btn-secondary btn-sm" title="Attach all pre-configured evidence options">
+                <span class="icon">&#9889;</span> Attach All Evidence Options
+              </button>
+              <button type="button" id="btnClearEvidenceLedger" class="btn btn-ghost btn-sm" title="Clear current evidence ledger">
+                Clear Ledger
+              </button>
+            </div>
+
+            <!-- Pre-Configured Evidence Cards for Active Theme -->
+            <div id="preconfiguredEvidenceList" class="preconfigured-evidence-cards">
+              <!-- Dynamically populated evidence option cards -->
+            </div>
+
+            <!-- Scoring Formula & State Transition Trigger -->
+            <div class="scoring-formula-card mt-3">
+              <h4 class="sub-heading">Mathematical Evaluation Model:</h4>
+              <div class="formula-box">
+                <span class="math-mono">Score<sub>net</sub> = &Sigma; (Reliability<sub>i</sub> &times; Stance<sub>i</sub>) / &Sigma; Reliability<sub>i</sub></span>
+              </div>
+              <div class="scoring-stats-row">
+                <div class="stat-pill">
+                  <span class="stat-lbl">Aggregated Score:</span>
+                  <span id="aggScoreVal" class="stat-val gold">+0.82</span>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-lbl">Automaton Trigger:</span>
+                  <span id="aggTriggerVal" class="stat-val emerald">Symbol 'b' (Support)</span>
+                </div>
+              </div>
+              <button type="button" id="btnCommitEvidenceToDFA" class="btn btn-primary full-width mt-3">
+                <span class="icon">&#9881;</span> Evaluate Evidence &amp; Transition Automaton State &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Evidence Map (SVG Graph) -->
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">&#9670;</span> Interactive Evidence Mapping Architecture
+            </h3>
+            <p class="card-intro">
+              Visual dependency graph mapping <span class="math-mono">CLAIM &rarr; SOURCE &rarr; EVIDENCE &rarr; EVALUATION</span>.
+            </p>
+
+            <div class="evidence-map-container">
+              <svg id="svgEvidenceMap" viewBox="0 0 460 300" class="responsive-svg">
+                <!-- Dynamically populated SVG graph -->
+              </svg>
+            </div>
+
+            <!-- List of Logged Evidence Items -->
+            <div class="logged-evidence-wrap mt-3">
+              <h4 class="sub-heading">Logged Evidence Ledger (<span id="evidenceCountBadge">0</span>):</h4>
+              <div id="evidenceListContainer" class="evidence-items-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- EVOLUTION ANALYSIS & TRUTHTRACE REPORTING                                 -->
+      <!-- ========================================================================= -->
+      <section id="workspace-module-4" class="workspace-pane">
+        <div class="workspace-header">
+          <div class="pane-title-group">
+            <span class="pane-eyebrow">VERIFIABLE AUDIT &amp; SYNTHESIS</span>
+            <h2 class="pane-title">Evolution Analysis &amp; TruthTrace Reporting</h2>
+          </div>
+          <div class="pane-actions">
+            <button id="btnDownloadReport" class="btn btn-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Report (.txt)
+            </button>
+            <button id="btnPrintReport" class="btn btn-secondary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              Print / Export View
+            </button>
+          </div>
+        </div>
+
+        <div class="truth-trace-report-wrapper card">
+          <div class="report-header-banner">
+            <div class="report-crest">
+              <span class="report-title-top">VERIFICATION AUDIT CERTIFICATE</span>
+              <h3 class="report-main-title">TruthTrace Evolution Report</h3>
+            </div>
+            <div class="report-meta-box">
+              <div><strong>Document ID:</strong> <span id="repDocId" class="mono">TT-2028-402X</span></div>
+              <div><strong>Generated:</strong> <span id="repTimestamp" class="mono">2026-11-02 20:30 UTC</span></div>
+              <div><strong>Model:</strong> <span class="mono">Deterministic Finite Automaton M = (Q, &Sigma;, &delta;, q&#8320;, F)</span></div>
+            </div>
+          </div>
+
+          <!-- Timeline of State Traversal -->
+          <div class="report-section">
+            <h4 class="report-sec-title">1. State Evolution Path</h4>
+            <div id="reportTimeline" class="timeline-stepper">
+              <!-- Dynamically populated state nodes with icons and arrows -->
+            </div>
+          </div>
+
+          <!-- Formal Metrics Grid -->
+          <div class="report-section">
+            <h4 class="report-sec-title">2. Verification Summary</h4>
+            <div class="grid-3col">
+              <div class="metric-card">
+                <span class="metric-label">Starting State (q&#8320;):</span>
+                <span id="repInitialState" class="metric-value gold">Q0 &ndash; Initial Claim</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Final State (q<sub>f</sub>):</span>
+                <span id="repFinalState" class="metric-value emerald">Q4 &ndash; Verified</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Verdict:</span>
+                <span id="repVerdict" class="metric-value badge badge-emerald">Claim Status: Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Claim Delta Comparison -->
+          <div class="report-section">
+            <h4 class="report-sec-title">3. Statement Comparison</h4>
+            <div class="grid-2col">
+              <div class="delta-box delta-original">
+                <span class="delta-label">Original Claim Statement (Q0):</span>
+                <p id="repOriginalClaim" class="delta-text">Virat Kohli is ruled out of the upcoming Border-Gavaskar Trophy series due to a chronic back spasm.</p>
+              </div>
+              <div class="delta-box delta-evolved">
+                <span class="delta-label">Final Verified / Fact-Checked Statement:</span>
+                <p id="repCurrentClaim" class="delta-text">BCCI medical team confirms Virat Kohli participated in full training sessions in Perth; declared fully fit for the Border-Gavaskar Trophy.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Evidence Ledger Table -->
+          <div class="report-section">
+            <h4 class="report-sec-title">4. Evidence &amp; Sources Audit</h4>
+            <div class="table-responsive">
+              <table id="repEvidenceTable" class="audit-table full-width">
+                <thead>
+                  <tr>
+                    <th class="col-num">#</th>
+                    <th class="col-source">Source Organization</th>
+                    <th class="col-weight">Credibility Weight</th>
+                    <th class="col-stance">Stance</th>
+                    <th class="col-excerpt">Evidence Excerpt</th>
+                    <th class="col-impact">State Impact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Injected via JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Formal Conclusion Card -->
+          <div class="report-section">
+            <h4 class="report-sec-title">5. State Transition Proof</h4>
+            <div id="repProofBox" class="proof-box mono">
+              Given input sequence w = &lang;b, d&rang;, computation path &delta;*(Q0, w) yields:
+              &delta;(Q0, b) = Q2 (Supported Claim)
+              &delta;(Q2, d) = Q4 (Verified Claim)
+              Since Q4 &isin; F (Accepting States), string w is ACCEPTED.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- THEORY OF COMPUTATION PRINCIPLES                                          -->
+      <!-- ========================================================================= -->
+      <section id="workspace-toc" class="workspace-pane">
+        <div class="workspace-header">
+          <div class="pane-title-group">
+            <span class="pane-eyebrow">FORMAL LANGUAGE &amp; AUTOMATA THEORY</span>
+            <h2 class="pane-title">Theory of Computation Principles</h2>
+          </div>
+          <div class="pane-actions">
+            <span class="badge badge-gold">Academic Defense Guide</span>
+          </div>
+        </div>
+
+        <!-- Concept A & B: Finite Automata & DFA 5-Tuple -->
+        <div class="grid-2col">
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">A.</span> Finite Automata Representation of Claims
+            </h3>
+            <p class="card-intro">
+              In classical computing, Finite Automata process strings of characters. In this framework, we model the <strong>epistemic lifecycle of information</strong> as discrete states, and journalistic events as input alphabet tokens.
+            </p>
+            <ul class="concept-list">
+              <li><strong>Discrete State Space:</strong> A news claim cannot exist in infinite arbitrary conditions; it resides in exactly one state from the finite set <span class="math-mono">Q</span> at any time step.</li>
+              <li><strong>Temporal Invariance:</strong> Given identical evidence sequences, a deterministic machine always arrives at the identical verification outcome.</li>
+              <li><strong>Mathematical Auditability:</strong> Prevents subjective or hidden decision making by strictly defining allowed transition paths.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">B.</span> Formal 5-Tuple Definition of the DFA
+            </h3>
+            <p class="card-intro">
+              The framework is formally defined as a Deterministic Finite Automaton:
+            </p>
+            <div class="formal-tuple-box">
+              <div class="tuple-formula">M = (Q, &Sigma;, &delta;, q&#8320;, F)</div>
+              <ul class="tuple-elements">
+                <li><strong>Q (Finite States):</strong> { Q0, Q1, Q2, Q3, Q4, Q5 }</li>
+                <li><strong>&Sigma; (Input Alphabet):</strong> { a, b, c, d, e }</li>
+                <li><strong>&delta; (Transition Function):</strong> &delta;: Q &times; &Sigma; &rarr; Q</li>
+                <li><strong>q&#8320; (Start State):</strong> Q0 (Original Claim)</li>
+                <li><strong>F (Accepting States):</strong> { Q4 } (Verified Claim)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concept C & D: Input Alphabet & Transition Matrix -->
+        <div class="grid-2col mt-4">
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">C.</span> Formal Input Alphabet &Sigma;
+            </h3>
+            <table class="table-compact full-width">
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Computational Semantics</th>
+                  <th>Journalistic Real-World Trigger</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge badge-gold">a</span></td>
+                  <td>Claim Modification / Refinement</td>
+                  <td>Author or source issues an updated statement with revised parameters.</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-emerald">b</span></td>
+                  <td>Corroborating Evidence Ingested</td>
+                  <td>Credible third party or empirical data affirms the core statement.</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-crimson">c</span></td>
+                  <td>Contradictory Evidence Ingested</td>
+                  <td>Conflicting records, investigative refutation, or denial published.</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-emerald">d</span></td>
+                  <td>Verification Standard Satisfied</td>
+                  <td>High-confidence institutional consensus meets statutory threshold.</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-crimson">e</span></td>
+                  <td>Rejection Standard Satisfied</td>
+                  <td>Irrefutable disproof leads to definitive editorial debunking.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">D.</span> Transition Function &delta; Dynamics
+            </h3>
+            <p class="card-intro">
+              The transition function dictates state traversal without ambiguity:
+            </p>
+            <div class="code-block-mini mono">
+              &delta;(Q0, a) = Q1  |  &delta;(Q0, b) = Q2  |  &delta;(Q0, c) = Q3
+              &delta;(Q1, b) = Q2  |  &delta;(Q1, c) = Q3  |  &delta;(Q1, a) = Q1
+              &delta;(Q2, d) = Q4  |  &delta;(Q2, c) = Q3  |  &delta;(Q2, a) = Q1
+              &delta;(Q3, e) = Q5  |  &delta;(Q3, b) = Q2  |  &delta;(Q3, a) = Q1
+              &delta;(Q4, &sigma;) = Q4 (Accepting Sink / Terminal Verified)
+              &delta;(Q5, &sigma;) = Q5 (Rejecting Sink / Terminal Debunked)
+            </div>
+            <p class="text-sage font-sm mt-2">
+              Note: Q4 and Q5 act as absorbing (sink) terminal states once legal consensus or decisive falsification occurs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Concept E: Interactive String Acceptance Engine -->
+        <div class="card mt-4">
+          <div class="card-header-flex">
+            <div>
+              <h3 class="card-title">
+                <span class="gold-icon">E.</span> Interactive String Acceptance Engine L(M)
+              </h3>
+              <p class="card-intro">
+                Enter any sequence of input alphabet symbols from <span class="math-mono">&Sigma; = {a, b, c, d, e}</span> (space-separated or joined). Watch the automaton step through each symbol and determine whether <span class="math-mono">w &isin; L(M)</span>.
+              </p>
+            </div>
+            <div class="quick-examples">
+              <span class="font-xs text-sage">Quick Test Strings:</span>
+              <button class="btn btn-ghost btn-xs btn-quick-str" data-str="a b d">a b d</button>
+              <button class="btn btn-ghost btn-xs btn-quick-str" data-str="b d">b d</button>
+              <button class="btn btn-ghost btn-xs btn-quick-str" data-str="c e">c e</button>
+              <button class="btn btn-ghost btn-xs btn-quick-str" data-str="a c a b d">a c a b d</button>
+              <button class="btn btn-ghost btn-xs btn-quick-str" data-str="a d">a d (Invalid)</button>
+            </div>
+          </div>
+
+          <div class="string-tester-grid">
+            <div class="tester-input-col">
+              <div class="form-group">
+                <label for="inputTestString" class="form-label">Input String Sequence (w):</label>
+                <div class="input-with-btn">
+                  <input type="text" id="inputTestString" class="form-input mono" value="a b d" placeholder="e.g., a b d or c e">
+                  <button id="btnRunString" class="btn btn-primary">Process String</button>
+                  <button id="btnStepString" class="btn btn-secondary">Step &rarr;</button>
+                  <button id="btnResetTape" class="btn btn-outline-danger">Reset</button>
+                </div>
+              </div>
+
+              <!-- Animated Tape Register -->
+              <div class="tape-container">
+                <span class="tape-label">AUTOMATON INPUT TAPE:</span>
+                <div id="tapeCellsWrapper" class="tape-cells">
+                  <!-- Generated by JavaScript -->
+                </div>
+              </div>
+            </div>
+
+            <div class="tester-verdict-col">
+              <div id="stringVerdictBox" class="verdict-box verdict-pending">
+                <div class="verdict-icon">&#9678;</div>
+                <div class="verdict-details">
+                  <span id="verdictStatusText" class="verdict-title">READY TO PROCESS</span>
+                  <p id="verdictExplanation" class="verdict-sub">Enter an alphabet string to evaluate acceptance against language L(M).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step Trace Output -->
+          <div class="tape-step-history mt-3">
+            <h4 class="sub-heading">Step-by-Step Transition Log &delta;*(q&#8320;, w):</h4>
+            <div id="stringTraceLog" class="trace-log-box mono">
+              Click 'Process String' or 'Step' to view formal execution trace.
+            </div>
+          </div>
+        </div>
+
+        <!-- Concept F & G: NFA vs DFA Comparison & Real-World Rigor -->
+        <div class="grid-2col mt-4">
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">F.</span> NFA vs. DFA: Theoretical Comparison
+            </h3>
+            <p class="card-intro">
+              Why use a DFA over a Non-Deterministic Finite Automaton (NFA)?
+            </p>
+            <div class="comparison-table-wrap">
+              <table class="table-compact full-width">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>DFA (Our Implementation)</th>
+                    <th>NFA (Alternative Model)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Next State Function:</strong></td>
+                    <td>&delta;: Q &times; &Sigma; &rarr; Q (Exactly 1 state)</td>
+                    <td>&delta;: Q &times; &Sigma; &rarr; 2<sup>Q</sup> (Set of states)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>News Interpretation:</strong></td>
+                    <td>Definitive, accountable single consensus.</td>
+                    <td>Superposition of competing rumors.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Computational Rigor:</strong></td>
+                    <td>Zero ambiguity; linear audit trail.</td>
+                    <td>Requires subset construction.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Implementation Verdict:</strong></td>
+                    <td><span class="badge badge-emerald">Ideal for Formal Audit</span></td>
+                    <td><span class="badge badge-sage">Models Fog of War</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Interactive NFA Simulation Toggle -->
+            <div class="nfa-demo-box mt-3">
+              <h4 class="sub-heading">Interactive Ambiguity Simulation (NFA Subset):</h4>
+              <p class="font-xs text-sage">When conflicting unverified evidence arrives concurrently, an NFA branches into multiple possible states:</p>
+              <div class="nfa-branch-actions">
+                <button id="btnSimulateNFA" class="btn btn-ghost btn-sm">Simulate Conflicting Broadcasts (&lambda;-split)</button>
+                <div id="nfaStateSetResult" class="nfa-state-set mono">Current NFA State Set: { Q0 }</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              <span class="gold-icon">G.</span> Real-World Relevance &amp; Academic Merit
+            </h3>
+            <p class="card-intro">
+              How theoretical automata science solves modern misinformation challenges:
+            </p>
+            <div class="academic-points">
+              <div class="point-item">
+                <div class="point-badge">01</div>
+                <div>
+                  <strong>Auditability Over Black-Box Models:</strong>
+                  <p>Unlike deep neural networks whose internal rationale is opaque, a DFA yields an irrefutable mathematical proof of why a claim reached 'Verified' or 'Rejected'.</p>
+                </div>
+              </div>
+              <div class="point-item">
+                <div class="point-badge">02</div>
+                <div>
+                  <strong>Standardized Editorial Consensus:</strong>
+                  <p>News organizations can establish formal grammars for evidence validation, preventing premature conclusions without required intermediary states.</p>
+                </div>
+              </div>
+              <div class="point-item">
+                <div class="point-badge">03</div>
+                <div>
+                  <strong>Formal Verification of Information Systems:</strong>
+                  <p>Enables model checking and automated verification to guarantee that no claim can reach an accepting state without passing rigorous evidentiary criteria.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
